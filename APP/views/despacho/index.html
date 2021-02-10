@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <h1>Despacho</h1>
+            <h3 class="text-danger" id="txtStatus"></h3>
+        </div>
+        <div class="card" id="txtNotif">
+            
+        </div>
+        <div class="card">
+            <div class="table-responsive">
+                <table class="table table-responsive table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td>Fecha</td>
+                            <td>Documento</td>
+                            <td>Cliente/Observaciones</td>
+                            <td>Importe</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="tblOrdenes">
+
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<!--MODAL COBRO-->
+<div class="modal fade " id="ModalDetallePedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-lg modal-dialog-right" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <label class="modal-title text-danger h3" id="">Detalle de Pedido</label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <h1 class="text-info" id="txtCliente">Consumidor Final</h1>
+                    <label class="text-info" id="txtDocumento">ped-01</label>
+                    <h1 class="text-danger text-right"id="txtTotalDocumento">Q100.00</h1>
+                </div>
+                <div class="form-group">
+                    <table class="table table-responsive table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <td>Producto</td>
+                                <td>Medida</td>
+                                <td>Cantidad</td>
+                                <td>Subtotal</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tblPedidoSeleccionado">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-6" id="btnCancelarContainer">
+                        <!--CONTENEDOR PARA BOTON CANCELAR -->
+                    </div>
+                    <div class="col-6" id="btnAceptarContainer">
+                        <!-- CONTENEDOR PARA EL BOTÓN FINALIZAR -->
+                    </div>
+                    
+                </div>
+                  
+                 
+                      
+                 
+            </div>
+        </div>
+    </div>
+</div>

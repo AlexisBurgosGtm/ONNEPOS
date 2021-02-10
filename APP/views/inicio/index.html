@@ -1,0 +1,117 @@
+<div class="row">
+    
+    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <img src="./favicon.png" width="200" height="200">
+    </div>
+
+    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+    
+        <div class="card shadow">
+            <div class="card-header text-center bg-info text-white">
+                <h3>VENTAS</h3>
+            </div>
+            <div class="card-body text-center">
+                <img src="./logos/ventas.png" width="100" height="100" id="imgInicioVentas">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-block btn-info btn-lg" id="btnInicioVentas">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="card shadow">
+            <div class="card-header text-center bg-primary text-white">
+                <h3>DESPACHO</h3>
+            </div>
+            <div class="card-body text-center">
+                <img src="./logos/despacho.png" width="100" height="100" id="imgInicioDespacho">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-block btn-primary btn-lg" id="btnInicioDespacho">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="card shadow">
+            <div class="card-header text-center bg-danger text-white">
+                <h3>CAJA</h3>
+            </div>
+            <div class="card-body text-center">
+                <img src="./logos/caja.png" width="100" height="100" id="imgInicioCaja">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-block btn-danger btn-lg" id="btnInicioCaja">Ingresar</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<!--MODAL LOGIN -->
+<div class="modal fade " id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <img src="../../img/logo.png" width="40" height="40">
+                <label class="modal-title text-white h3" id="">Inicio de Sesión</label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white" aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="form-group">
+                    <label>Seleccione una Empresa</label>
+                    <select id="cmbEmpresas" class="form-control">
+
+                    </select>
+                </div>
+                <div class="form-group hidden" style="visibility: hidden;">
+                    <label class="">Escriba su Contraseña:</label>
+                    <input class="form-control" type="password" id="txtPass">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-info btn-md btn-pills btn-block waves-effect waves-themed" id="btnLogin">
+                        <i class="fal fa-check mr-1"></i>
+                        Aceptar
+                    </button>
+                </div>  
+                 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade " id="ModalLogin2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-transparent" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <label class="modal-title text-white h3" id="">Inicio de Sesión</label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="text-white">Escriba su Contraseña:</label>
+                    <input class="form-control" type="password" id="txtPass">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-lg btn-pills btn-block waves-effect waves-themed" id="btnLogin">
+                        <i class="fal fa-check mr-1"></i>
+                        Aceptar
+                    </button>
+                </div>
+                  
+                 
+                      
+                 
+            </div>
+        </div>
+    </div>
+</div>
